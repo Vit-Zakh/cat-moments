@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.sab.catsmoments.fragments.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.sab.catsmoments.fragments.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_momentSettingsFragment"
+            app:destination="@id/momentSettingsFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_momentsListFragment"
+            app:destination="@id/momentsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/momentSettingsFragment"
+        android:name="com.sab.catsmoments.fragments.MomentSettingsFragment"
+        android:label="fragment_moment_settings"
+        tools:layout="@layout/fragment_moment_settings" >
+        <action
+            android:id="@+id/action_momentSettingsFragment_to_momentsListFragment"
+            app:destination="@id/momentsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/momentsListFragment"
+        android:name="com.sab.catsmoments.fragments.MomentsListFragment"
+        android:label="fragment_moments_list"
+        tools:layout="@layout/fragment_moments_list" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.sab.catsmoments.fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_momentSettingsFragment"
+            app:destination="@id/momentSettingsFragment" />
+    </fragment>
+</navigation>

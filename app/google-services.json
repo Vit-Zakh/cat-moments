@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "132009555852",
+    "firebase_url": "https://cats-moments.firebaseio.com",
+    "project_id": "cats-moments",
+    "storage_bucket": "cats-moments.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132009555852:android:7f090b6667b891ffc4c8a9",
+        "android_client_info": {
+          "package_name": "com.sab.catsmoments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132009555852-bgtqsrlvdeuj4qnruonomf0gv4611oge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_xITsu-LZXkzg2-MGaY7X8GmvWyrlA4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132009555852-bgtqsrlvdeuj4qnruonomf0gv4611oge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

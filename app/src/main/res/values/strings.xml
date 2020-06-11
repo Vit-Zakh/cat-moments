@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cats Moments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cat_s_moments">Cat\'s Moments</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="title">Cat\'s Moments</string>
+    <string name="don_t_miss_a_thing">Don\'t miss a thing!</string>
+    <string name="your_cat_name">Your cat\'s name</string>
+    <string name="create_account">Create account</string>
+</resources>
