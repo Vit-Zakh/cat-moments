@@ -12,4 +12,9 @@
     <string name="don_t_miss_a_thing">Don\'t miss a thing!</string>
     <string name="your_cat_name">Your cat\'s name</string>
     <string name="create_account">Create account</string>
+    <string name="save_this_moment">Save this moment</string>
+    <string name="logout">Logout</string>
+    <string name="title_settings">Title</string>
+    <string name="description_settings">Description</string>
+    <string name="cat_s_name">cat\'s name</string>
 </resources>

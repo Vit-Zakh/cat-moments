@@ -19,6 +19,10 @@
         android:name="com.sab.catsmoments.fragments.AuthorizationFragment"
         android:label="fragment_authorization"
         tools:layout="@layout/fragment_authorization" >
+        <argument
+            android:name="firebaseUser"
+            app:argType="com.google.firebase.auth.FirebaseUser"
+            />
         <action
             android:id="@+id/action_authorizationFragment_to_registrationFragment"
             app:destination="@id/registrationFragment" />
@@ -34,15 +38,53 @@
         android:name="com.sab.catsmoments.fragments.MomentSettingsFragment"
         android:label="fragment_moment_settings"
         tools:layout="@layout/fragment_moment_settings" >
+
+        <argument
+            android:name="user"
+            app:argType="com.sab.catsmoments.models.User"
+            />
+
+        <argument
+            android:name="catName"
+            app:argType="string"
+            />
+
+        <argument
+            android:name="firebaseUser"
+            app:argType="com.google.firebase.auth.FirebaseUser"
+            />
+
         <action
             android:id="@+id/action_momentSettingsFragment_to_momentsListFragment"
             app:destination="@id/momentsListFragment" />
+        <action
+            android:id="@+id/action_momentSettingsFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment"
+            app:popUpTo="@+id/homeScreenFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/momentsListFragment"
         android:name="com.sab.catsmoments.fragments.MomentsListFragment"
         android:label="fragment_moments_list"
-        tools:layout="@layout/fragment_moments_list" />
+        tools:layout="@layout/fragment_moments_list">
+        <argument
+            android:name="moment"
+            app:argType="com.sab.catsmoments.models.Moment"
+            />
+        <argument
+            android:name="firebaseUser"
+            app:argType="com.google.firebase.auth.FirebaseUser"
+            />
+        <action
+            android:id="@+id/action_momentsListFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment"
+            app:popUpTo="@+id/homeScreenFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_momentsListFragment_to_momentSettingsFragment"
+            app:destination="@id/momentSettingsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.sab.catsmoments.fragments.RegistrationFragment"

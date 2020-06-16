@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.RegistrationFragment">
 
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registration"
+        android:textColor="@color/backgroundCardView"
         android:textStyle="italic|bold"
         android:textSize="42sp"
         android:layout_marginTop="150dp"
@@ -25,6 +27,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/e_mail"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@id/registrationTitle"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +41,8 @@
         android:ems="10"
         android:inputType="textPassword"
         android:hint="@string/password"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/emailText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -48,6 +54,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/your_cat_name"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/passwordText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -57,6 +65,8 @@
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:text="@string/create_account"
+        android:background="@color/backgroundColorCard"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/catNameText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

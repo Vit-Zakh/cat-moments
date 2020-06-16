@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.sab.catsmoments"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -54,4 +54,7 @@ dependencies {
 
     //GridLayout
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
